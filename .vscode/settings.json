@@ -11,5 +11,15 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "rome.rome"
-  }
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["schema/**/*.schema.json", "!schema/meta.schema.json"],
+      "url": "schema/meta.schema.json"
+    },
+    {
+      "fileMatch": ["tests/**/*.schema.json"],
+      "url": "./schema/meta.schema.json"
+    }
+  ]
 }

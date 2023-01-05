@@ -1,16 +1,17 @@
 {
   "name": "json-schema-to-typescript-module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Create typescript modules out of json schemas.",
   "private": true,
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node ./dist/index.js",
     "build": "tsc",
     "format": "rome format --write . && prettier --write .",
     "check": "rome check --apply . && prettier --check . && tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "meta": "node ./scripts/meta.js"
   },
   "repository": {
     "type": "git",
