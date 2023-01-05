@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [Installation](#installation)
+- [Usage](#usage)
 - [Development](#development)
 
 ## Installation
@@ -11,6 +12,20 @@ Install dependencies:
 
 ```sh
 npm install
+```
+
+## Usage
+
+Build the project:
+
+```sh
+npm run build
+```
+
+Start the result:
+
+```sh
+npm start
 ```
 
 ## Development

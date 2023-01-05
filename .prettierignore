@@ -5,6 +5,11 @@
 # javascript and typescript files
 # as they are covered by rome tools
 **/*.js
+**/*.cjs
+**/*.mjs
 **/*.ts
+**/*.cts
+**/*.mts
 
+# dependencies
 node_modules
