@@ -1,0 +1,49 @@
+{
+  "name": "json-schema-to-typescript-module",
+  "version": "0.0.1",
+  "description": "Create typescript modules out of json schemas.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsx",
+    "format": "rome format --write . && prettier --write",
+    "check": "rome check --apply . && prettier --check . && tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabenGar/json-schema-to-typescript-module.git"
+  },
+  "keywords": [],
+  "author": "Gabengar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabenGar/json-schema-to-typescript-module/issues"
+  },
+  "homepage": "https://github.com/GabenGar/json-schema-to-typescript-module#readme",
+  "dependencies": {
+    "@hyperjump/json-schema": "^1.0.0",
+    "date-fns": "^2.29.3",
+    "nanoid": "^4.0.0",
+    "node-fetch": "^3.3.0",
+    "stringify-object": "^4.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@hyperjump/json-schema-bundle": "^0.4.0",
+    "@types/node": "^16.0.0",
+    "@types/stringify-object": "^4.0.2",
+    "@types/uuid": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.0",
+    "rome": "^11.0.0",
+    "typescript": "4.9.4"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

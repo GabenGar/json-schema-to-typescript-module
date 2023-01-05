@@ -1,0 +1,15 @@
+{
+  // force vscode to use the local typescript installation
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "javascript.preferences.quoteStyle": "double",
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.quoteStyle": "double",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[javascript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rome.rome"
+  }
+}

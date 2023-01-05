@@ -1,0 +1,10 @@
+# build output
+/dist
+
+# disable formatting of
+# javascript and typescript files
+# as they are covered by rome tools
+**/*.js
+**/*.ts
+
+node_modules

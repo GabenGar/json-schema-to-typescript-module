@@ -1,0 +1,22 @@
+{
+  "files": { "ignore": ["/node_modules", "/dist"] },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "useSimplifiedLogicExpression": "warn"
+      },
+      "style": {
+        "noNegationElse": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noExplicitAny": "off"
+      }
+    }
+  },
+  "formatter": {
+    "indentStyle": "space"
+  }
+}
